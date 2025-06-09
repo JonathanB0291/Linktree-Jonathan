@@ -1,0 +1,89 @@
+/* General */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: url('./imagenes/Dev Frontend.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Fondo oscuro para contraste */
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Contenedor principal */
+.content {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px 20px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Avatar redondo */
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+}
+
+/* Descripción */
+.descripcion {
+  font-size: 16px;
+  margin: 10px 0 20px;
+  color: #ddd;
+}
+
+/* Estilo de los enlaces */
+.link {
+  display: block;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  text-decoration: none;
+  margin: 12px 0;
+  padding: 14px 20px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.link:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .content {
+    padding: 30px 15px;
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .link {
+    font-size: 15px;
+    padding: 12px 18px;
+  }
+}
